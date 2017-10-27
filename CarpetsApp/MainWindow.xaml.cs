@@ -24,5 +24,30 @@ namespace CarpetsApp
         {
             InitializeComponent();
         }
+
+        private void mark_all_btn_Click(object sender, RoutedEventArgs e)
+        {
+            companies_dg.SelectAll();
+        }
+
+        private void mark_none_btn_Click(object sender, RoutedEventArgs e)
+        {
+            companies_dg.UnselectAll();
+        }
+
+        private void booking_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void book_and_print_btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void print_bill_button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

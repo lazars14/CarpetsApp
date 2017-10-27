@@ -62,12 +62,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="dao\BillDao.cs" />
+    <Compile Include="dao\BillitemDao.cs" />
+    <Compile Include="dao\CarpetDao.cs" />
+    <Compile Include="dao\CompanyDao.cs" />
+    <Compile Include="helpers\ExcelFileEditHelper.cs" />
+    <Compile Include="helpers\PrintHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\ApplicationA.cs" />
+    <Compile Include="model\Bill.cs" />
+    <Compile Include="model\Billitem.cs" />
+    <Compile Include="model\Carpet.cs" />
+    <Compile Include="model\Company.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="excelTemplates\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

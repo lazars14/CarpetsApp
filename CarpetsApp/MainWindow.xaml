@@ -5,21 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarpetsApp"
         mc:Ignorable="d"
-        Title="Preduzeca" Height="691.599" Width="900">
+        Title="Preduzeca" Height="461.111" Width="900">
     <Grid>
-        <DataGrid x:Name="companies_dg" HorizontalAlignment="Left" Height="141" Margin="10,56,0,0" VerticalAlignment="Top" Width="872"/>
+        <DataGrid x:Name="companies_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="141" Margin="10,56,0,0" VerticalAlignment="Top" Width="872"/>
         <Label x:Name="companies_lbl" Content="Preduzeca" HorizontalAlignment="Left" Height="34" Margin="399,10,0,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
         <Label x:Name="traffic_lbl" Content="Mesec i godina prometa" HorizontalAlignment="Left" Margin="28,211,0,0" VerticalAlignment="Top" Width="143"/>
         <Calendar x:Name="traffic_cal" DisplayMode="Year" HorizontalAlignment="Left" Margin="10,242,0,0" VerticalAlignment="Top"/>
         <Label x:Name="date_lbl" Content="Datum fakture" HorizontalAlignment="Left" Margin="279,211,0,0" VerticalAlignment="Top" Width="143"/>
         <Calendar x:Name="date_cal" HorizontalAlignment="Left" Margin="234,242,0,0" VerticalAlignment="Top"/>
-        <DataGrid x:Name="bills_dg" HorizontalAlignment="Left" Height="141" Margin="10,468,0,0" VerticalAlignment="Top" Width="872"/>
-        <Label x:Name="bills_lbl" Content="Fakture" HorizontalAlignment="Left" Height="34" Margin="399,427,0,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
-        <Button x:Name="mark_all_btn" Content="Obelezi sve" HorizontalAlignment="Left" Height="31" Margin="454,246,0,0" VerticalAlignment="Top" Width="112"/>
-        <Button x:Name="mark_none_btn" Content="Obelezi nista" HorizontalAlignment="Left" Height="31" Margin="454,294,0,0" VerticalAlignment="Top" Width="112"/>
-        <Button x:Name="booking_btn" Content="Proknjizi" HorizontalAlignment="Left" Height="31" Margin="770,246,0,0" VerticalAlignment="Top" Width="112"/>
-        <Button x:Name="book_and_print_btn" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="770,294,0,0" VerticalAlignment="Top" Width="112"/>
-        <Button x:Name="print_bill_button" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="399,620,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="mark_all_btn" Content="Obelezi sve" HorizontalAlignment="Left" Height="31" Margin="454,246,0,0" VerticalAlignment="Top" Width="112" Click="mark_all_btn_Click"/>
+        <Button x:Name="mark_none_btn" Content="Obelezi nista" HorizontalAlignment="Left" Height="31" Margin="454,294,0,0" VerticalAlignment="Top" Width="112" Click="mark_none_btn_Click"/>
+        <Button x:Name="booking_btn" Content="Proknjizi" HorizontalAlignment="Left" Height="31" Margin="770,246,0,0" VerticalAlignment="Top" Width="112" Click="booking_btn_Click"/>
+        <Button x:Name="book_and_print_btn" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="770,294,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
 
     </Grid>
 </Window>
