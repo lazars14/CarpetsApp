@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace CarpetsApp.dao
 {
@@ -34,16 +35,25 @@ namespace CarpetsApp.dao
                     foreach (DataRow row in dataSet.Tables["company"].Rows)
                     {
                         int id = (int)row["id"];
-                        int languageId = (int)row["Course_LanguageId"];
-                        int courseTypeId = (int)row["Course_CourseTypeId"];
-                        int teacherId = (int)row["Course_TeacherId"];
-                        double price = (double)row["Course_Price"];
-                        DateTime startDate = (DateTime)row["Course_StartDate"];
-                        DateTime endDate = (DateTime)row["Course_EndDate"];
-                        bool deleted = (bool)row["Course_Deleted"];
-                        Course course = new Course(id, languageId, courseTypeId, price, teacherId, startDate, endDate, deleted);
+                        String name = (String)row["name"];
+                        String pib = (String)row["pib"];
+                        String address = (String)row["address"];
+                        String city = (String)row["city"];
+                        String zone = (String)row["zone"];
+                        String contactPerson = (String)row["contact_person"];
+                        String phoneNumber = (String)row["phone_number"];
+                        DateTime signingDate = (DateTime)row["signing_date"];
+                        bool insecure = (bool)row["insecure"];
+                        float compensation = (float)row["compensation"];
+                        int numReplacements = (int)row["num_replacements"];
+                        int numLocations = (int)row["num_locations"];
+                        int numCarpets = (int)row["num_carpets"];
 
-                        ApplicationA.Instance.Companies.Add(course);
+
+                        Company company = new Company(id, name, pib, address, city, zone, contactPerson, 
+                            phoneNumber, signingDate, insecure, compensation, numReplacements, numLocations, numCarpets);
+
+                        ApplicationA.Instance.Companies.Add(company);
                     }
 
                     valid = true;

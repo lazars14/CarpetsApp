@@ -13,7 +13,7 @@ namespace CarpetsApp.model
     {
         public const string CONNECTION_STRING = @"Integrated Security=SSPI;
                                           Initial Catalog=carpets;
-                                          Data Source=DUSAN\SQLEXPRESS";
+                                          Data Source=DUSAN";
 
         public const string FILE_NAME = @"..\..\Log.txt";
 
@@ -21,7 +21,12 @@ namespace CarpetsApp.model
 
         public const string FILL_FIELD = "Popuniti";
 
+        public const string DATABASE_ERROR_MESSAGE = "Doslo je do greske sa bazom!";
+
         public ObservableCollection<Company> Companies { get; set; }
+        public ObservableCollection<Carpet> Carpets { get; set; }
+        public ObservableCollection<Billitem> Billitems { get; set; }
+        public ObservableCollection<Bill> Bills { get; set; }
 
         private static ApplicationA instance = new ApplicationA();
 
@@ -36,7 +41,11 @@ namespace CarpetsApp.model
         private ApplicationA()
         {
             Companies = new ObservableCollection<Company>();
-            CompanyDao.Load();   
+            Carpets = new ObservableCollection<Carpet>();
+            Billitems = new ObservableCollection<Billitem>();
+            Bills = new ObservableCollection<Bill>();
+            CompanyDao.Load();
+            CarpetDao.Load();
         }
 
         public static void WriteToLog(string stackTrace)

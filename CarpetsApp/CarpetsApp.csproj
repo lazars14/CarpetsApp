@@ -66,6 +66,7 @@
     <Compile Include="dao\BillitemDao.cs" />
     <Compile Include="dao\CarpetDao.cs" />
     <Compile Include="dao\CompanyDao.cs" />
+    <Compile Include="helpers\CarpetHelper.cs" />
     <Compile Include="helpers\ExcelFileEditHelper.cs" />
     <Compile Include="helpers\PrintHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
