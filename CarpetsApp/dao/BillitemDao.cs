@@ -1,6 +1,7 @@
 ﻿using CarpetsApp.model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,11 +13,11 @@ namespace CarpetsApp.dao
 {
     public class BillitemDao
     {
-        public static List<Billitem> LoadForBill(Bill bill)
+        public static ObservableCollection<Billitem> LoadForBill(Bill bill)
         {
             using (SqlConnection connection = new SqlConnection(ApplicationA.CONNECTION_STRING))
             {
-                List<Billitem> items = new List<Billitem>();
+                ObservableCollection<Billitem> items = new ObservableCollection<Billitem>();
 
                 connection.Open();
 
@@ -36,29 +37,31 @@ namespace CarpetsApp.dao
                     {
                         int id = (int)row["id"];
                         int carpetId = (int)row["carpet_id"];
-                        float price = (float)row["price"];
+                        double price = (double)row["price"];
 
-                        items.Add(new Billitem(id, carpetId, price, bill))
+                        Billitem item = new Billitem(id, carpetId, price);
+
+                        items.Add(item);
                     }
                 }
                 catch (SqlException e)
                 {
-                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    MessageBox.Show("SQL Exception");
                     ApplicationA.WriteToLog(e.StackTrace);
                 }
                 catch (InvalidOperationException a)
                 {
-                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    MessageBox.Show("InvalidOperationException");
                     ApplicationA.WriteToLog(a.StackTrace);
                 }
                 catch (ArgumentException g)
                 {
-                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    MessageBox.Show("ArgumentException");
                     ApplicationA.WriteToLog(g.StackTrace);
                 }
                 catch (NullReferenceException n)
                 {
-                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    MessageBox.Show("NullReferenceException");
                     ApplicationA.WriteToLog(n.StackTrace);
                 }
 

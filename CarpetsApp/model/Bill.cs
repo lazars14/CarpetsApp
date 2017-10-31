@@ -1,10 +1,12 @@
 ﻿using CarpetsApp.dao;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace CarpetsApp.model
 {
@@ -24,18 +26,18 @@ namespace CarpetsApp.model
             set { dispatcher = value; OnPropertyChanged("Dispatcher"); }
         }
 
-        private String billNum;
-        public String BillNum
-        {
-            get { return billNum; }
-            set { billNum = value; OnPropertyChanged("BillNum"); }
-        }
-
         private Company company;
         public Company Company
         {
             get { return company; }
             set { company = value; OnPropertyChanged("Company"); }
+        }
+
+        private int billNumForYear;
+        public int BillNumForYear
+        {
+            get { return billNumForYear; }
+            set { billNumForYear = value; OnPropertyChanged("BillNumForYear"); }
         }
 
         private String trafficMonth;
@@ -59,37 +61,21 @@ namespace CarpetsApp.model
             set { billDate = value; OnPropertyChanged("BillDate"); }
         }
 
-        private float surface;
-        public float Surface
-        {
-            get { return surface; }
-            set { surface = value; OnPropertyChanged("Surface"); }
-        }
-
-        private float price;
-        public float Price
-        {
-            get { return price; }
-            set { price = value; OnPropertyChanged("Price"); }
-        }
-
-        public List<Billitem> Items { get; set; }
+        public ObservableCollection<Billitem> Items { get; set; }
 
         public Bill() { }
 
         public Bill(int id) { Id = id; }
 
-        public Bill(int id, string dispatcher, string billNum, Company c, string trafficMonth, int trafficYear, DateTime billDate, float surface, float price)
+        public Bill(int id, string dispatcher, int companyId, int billNumForYear, string trafficMonth, int trafficYear, DateTime billDate)
         {
             Id = id;
             Dispatcher = dispatcher;
-            BillNum = billNum;
-            Company = c;
+            Company = new Company(companyId);
+            BillNumForYear = billNumForYear;
             TrafficMonth = trafficMonth;
             TrafficYear = trafficYear;
             BillDate = billDate;
-            Surface = surface;
-            Price = price;
             Items = BillitemDao.LoadForBill(this);
         }
 
@@ -115,13 +101,10 @@ namespace CarpetsApp.model
             Bill billCopy = new Bill();
             billCopy.Id = Id;
             billCopy.Dispatcher = Dispatcher;
-            billCopy.BillNum = BillNum;
             billCopy.Company = Company;
             billCopy.TrafficMonth = TrafficMonth;
             billCopy.TrafficYear = TrafficYear;
             billCopy.BillDate = BillDate;
-            billCopy.Surface = Surface;
-            billCopy.Price = Price;
 
             return billCopy;
         }

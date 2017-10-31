@@ -80,8 +80,8 @@ namespace CarpetsApp.model
             set { insecure = value; OnPropertyChanged("Insecure"); }
         }
 
-        private float compensation;
-        public float Compensation
+        private double compensation;
+        public double Compensation
         {
             get { return compensation; }
             set { compensation = value; OnPropertyChanged("Compensation"); }
@@ -119,7 +119,7 @@ namespace CarpetsApp.model
 
         public Company(int id) { Id = id; }
 
-        public Company(int id, string name, string pib, string address, string city, string zone, string contactPerson, string phoneNumber, DateTime signingDate, bool insecure, float compensation, int numReplacements, int numLocations, int numCarpets)
+        public Company(int id, string name, string pib, string address, string city, string zone, string contactPerson, string phoneNumber, DateTime signingDate, bool insecure, double compensation, int numReplacements, int numLocations, int numCarpets)
         {
             Id = id;
             Name = name;
@@ -135,7 +135,7 @@ namespace CarpetsApp.model
             NumReplacements = numReplacements;
             NumLocations = numLocations;
             NumCarpets = numCarpets;
-            Bill = BillDao.LoadId(this);
+            Bill = null;
         }
 
         #region INotifyPropertyChanged

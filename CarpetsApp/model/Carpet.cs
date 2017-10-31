@@ -16,15 +16,15 @@ namespace CarpetsApp.model
             set { id = value; OnPropertyChanged("Id"); }
         }
 
-        private float length;
-        public float Length
+        private double length;
+        public double Length
         {
             get { return length; }
             set { length = value; OnPropertyChanged("Length"); }
         }
 
-        private float width;
-        public float Width
+        private double width;
+        public double Width
         {
             get { return width; }
             set { width = value; OnPropertyChanged("Width"); }
@@ -34,7 +34,7 @@ namespace CarpetsApp.model
 
         public Carpet(int id) { Id = id; }
 
-        public Carpet(int id, float length, float width)
+        public Carpet(int id, double length, double width)
         {
             Id = id;
             Length = length;

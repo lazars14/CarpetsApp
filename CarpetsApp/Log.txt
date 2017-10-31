@@ -1,0 +1,370 @@
+30/10/2017 6:40:16 PM|
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at CarpetsApp.dao.CompanyDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CompanyDao.cs:line 40
+30/10/2017 6:42:05 PM|
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at CarpetsApp.dao.CompanyDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CompanyDao.cs:line 40
+30/10/2017 8:08:24 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 8:18:56 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 8:20:15 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 8:22:32 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 8:29:47 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 8:30:04 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 8:37:53 PM|
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 37
+30/10/2017 8:39:09 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 9:00:01 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 9:00:55 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 9:02:04 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 9:03:21 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 45
+30/10/2017 9:04:37 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+30/10/2017 9:05:00 PM|
+   at CarpetsApp.dao.CarpetDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CarpetDao.cs:line 42
+31/10/2017 4:19:55 PM|
+   at CarpetsApp.dao.CompanyDao.Load() in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\CompanyDao.cs:line 58
+31/10/2017 4:41:20 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:41:21 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:41:22 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:41:23 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:41:23 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:41:24 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:42:15 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:42:16 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:42:17 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:42:17 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:42:18 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 4:42:19 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 5:33:32 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:33:33 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:33:35 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:33:37 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:33:39 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:33:41 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:35:19 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:35:21 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:35:22 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:35:23 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:35:24 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:35:26 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:40:35 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:40:37 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:40:38 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:40:39 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:40:40 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:40:42 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:41:50 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:41:51 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:41:51 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:41:52 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:41:53 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:41:54 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 43
+31/10/2017 5:43:53 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:43:54 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:43:55 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:43:56 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:43:56 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:43:57 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:44:41 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:44:42 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:44:42 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:44:44 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:44:45 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:44:45 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 44
+31/10/2017 5:51:27 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 5:51:27 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 5:51:28 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 5:51:28 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 5:51:29 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 5:51:29 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 14
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:04:51 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:04:52 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:04:52 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:04:53 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:04:53 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:04:54 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:17:02 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:17:03 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:17:04 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:17:05 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:17:05 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:17:06 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:18:21 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:18:21 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:18:22 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:18:22 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:18:23 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:18:23 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:20:10 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 45
+31/10/2017 6:20:13 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 45
+31/10/2017 6:20:16 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 45
+31/10/2017 6:20:23 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 45
+31/10/2017 6:20:26 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 45
+31/10/2017 6:20:28 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 45
+31/10/2017 6:22:27 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:22:28 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:22:28 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:22:29 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:22:30 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 6:22:30 PM|
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 41
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 9:14:56 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 16
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 43
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 9:14:57 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 16
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 43
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 9:14:57 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 16
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 43
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 9:14:57 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 16
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 43
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 9:14:58 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 16
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 43
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42
+31/10/2017 9:14:58 PM|
+   at CarpetsApp.helpers.CarpetHelper.getCarpetFromApp(Int32 id) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\helpers\CarpetHelper.cs:line 16
+   at CarpetsApp.model.Billitem..ctor(Int32 id, Int32 carpetId, Double price) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\model\Billitem.cs:line 43
+   at CarpetsApp.dao.BillitemDao.LoadForBill(Bill bill) in C:\Users\Lazar\source\repos\CarpetsApp\CarpetsApp\dao\BillitemDao.cs:line 42

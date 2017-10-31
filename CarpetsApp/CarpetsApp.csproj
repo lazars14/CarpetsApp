@@ -34,8 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExcelDataReader, Version=3.2.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.2.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -66,7 +70,9 @@
     <Compile Include="dao\BillitemDao.cs" />
     <Compile Include="dao\CarpetDao.cs" />
     <Compile Include="dao\CompanyDao.cs" />
+    <Compile Include="helpers\BillMaxHelper.cs" />
     <Compile Include="helpers\CarpetHelper.cs" />
+    <Compile Include="helpers\CompaniesGridHelper.cs" />
     <Compile Include="helpers\ExcelFileEditHelper.cs" />
     <Compile Include="helpers\PrintHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
@@ -97,6 +103,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

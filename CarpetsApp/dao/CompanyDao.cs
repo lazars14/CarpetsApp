@@ -1,6 +1,7 @@
 ﻿using CarpetsApp.model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -13,11 +14,11 @@ namespace CarpetsApp.dao
     public class CompanyDao
     {
 
-        public static bool Load()
+        public static ObservableCollection<Company> Load()
         {
             using (SqlConnection connection = new SqlConnection(ApplicationA.CONNECTION_STRING))
             {
-                bool valid = false;
+                ObservableCollection<Company> companies = new ObservableCollection<Company>();
 
                 connection.Open();
 
@@ -37,26 +38,23 @@ namespace CarpetsApp.dao
                         int id = (int)row["id"];
                         String name = (String)row["name"];
                         String pib = (String)row["pib"];
-                        String address = (String)row["address"];
+                        String address = (String)row["adress"];
                         String city = (String)row["city"];
                         String zone = (String)row["zone"];
                         String contactPerson = (String)row["contact_person"];
                         String phoneNumber = (String)row["phone_number"];
                         DateTime signingDate = (DateTime)row["signing_date"];
                         bool insecure = (bool)row["insecure"];
-                        float compensation = (float)row["compensation"];
+                        double compensation = (double)row["compensation"];
                         int numReplacements = (int)row["num_replacements"];
                         int numLocations = (int)row["num_locations"];
                         int numCarpets = (int)row["num_carpets"];
 
-
                         Company company = new Company(id, name, pib, address, city, zone, contactPerson, 
                             phoneNumber, signingDate, insecure, compensation, numReplacements, numLocations, numCarpets);
 
-                        ApplicationA.Instance.Companies.Add(company);
+                        companies.Add(company);
                     }
-
-                    valid = true;
                 }
                 catch (SqlException e)
                 {
@@ -79,7 +77,7 @@ namespace CarpetsApp.dao
                     ApplicationA.WriteToLog(n.StackTrace);
                 }
 
-                return valid;
+                return companies;
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿using CarpetsApp.model;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,11 +13,11 @@ namespace CarpetsApp.dao
 {
     public class CarpetDao
     {
-        public static bool Load()
+        public static ObservableCollection<Carpet> Load()
         {
             using (SqlConnection connection = new SqlConnection(ApplicationA.CONNECTION_STRING))
             {
-                bool valid = false;
+                ObservableCollection<Carpet> carpets = new ObservableCollection<Carpet>();
 
                 connection.Open();
 
@@ -34,15 +35,13 @@ namespace CarpetsApp.dao
                     foreach (DataRow row in dataSet.Tables["carpet"].Rows)
                     {
                         int id = (int)row["id"];
-                        float length = (float)row["length"];
-                        float width = (float)row["width"];
+                        double length = (double)row["c_length"];
+                        double width = (double)row["c_width"];
 
                         Carpet carpet = new Carpet(id, length, width);
 
-                        ApplicationA.Instance.Carpets.Add(carpet);
+                        carpets.Add(carpet);
                     }
-
-                    valid = true;
                 }
                 catch (SqlException e)
                 {
@@ -62,10 +61,11 @@ namespace CarpetsApp.dao
                 catch (NullReferenceException n)
                 {
                     MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    MessageBox.Show(n.StackTrace);
                     ApplicationA.WriteToLog(n.StackTrace);
                 }
 
-                return valid;
+                return carpets;
             }
         }
 

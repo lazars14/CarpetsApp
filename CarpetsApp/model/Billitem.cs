@@ -24,32 +24,25 @@ namespace CarpetsApp.model
             set { carpet = value; OnPropertyChanged("Carpet"); }
         }
 
-        private float price;
-        public float Price
+        private double price;
+        public double Price
         {
             get { return price; }
             set { price = value; OnPropertyChanged("Price"); }
         }
 
-        private Bill bill;
-        private int carpetId;
-
-        public Bill Bill
-        {
-            get { return bill; }
-            set { bill = value; OnPropertyChanged("Bill"); }
-        }
+        public int CarpetId { get; set; }
 
         public Billitem() { }
         
         public Billitem(int id) { Id = id; }
 
-        public Billitem(int id, int carpetId, float price, Bill bill)
+        public Billitem(int id, int carpetId, double price)
         {
             Id = id;
-            Carpet = CarpetHelper.getCarpetFromApp(carpetId);
+            Carpet = null;
             Price = price;
-            Bill = bill;
+            CarpetId = carpetId;
         }
 
         #region INotifyPropertyChanged
@@ -75,7 +68,6 @@ namespace CarpetsApp.model
             itemCopy.Id = Id;
             itemCopy.Carpet = Carpet;
             itemCopy.Price = Price;
-            itemCopy.Bill = Bill;
 
             return itemCopy;
         }
