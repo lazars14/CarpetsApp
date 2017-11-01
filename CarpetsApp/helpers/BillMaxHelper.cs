@@ -61,5 +61,17 @@ namespace CarpetsApp.helpers
 
             return maxId;
         }
+
+        public static double getBillValue(Bill b)
+        {
+            double sum = 0;
+
+            foreach(Billitem item in b.Items)
+            {
+                sum += item.Price * item.Carpet.Length * item.Carpet.Width;
+            }
+
+            return sum;
+        }
     }
 }

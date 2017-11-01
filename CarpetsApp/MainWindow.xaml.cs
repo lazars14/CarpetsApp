@@ -107,7 +107,7 @@ namespace CarpetsApp
 
         private void booking_btn_Click(object sender, RoutedEventArgs e)
         {
-            PrintHelper.printExcelDoc();
+            ExcelFileEditHelper.editExcelFile(ApplicationA.Instance.Companies[0]);
         }
 
         private void book_and_print_btn_Click(object sender, RoutedEventArgs e)
@@ -156,14 +156,10 @@ namespace CarpetsApp
                         }
                     }
 
+                    ExcelFileEditHelper.editExcelFile(c);
                 }
 
             }
-        }
-
-        private void print_bill_button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

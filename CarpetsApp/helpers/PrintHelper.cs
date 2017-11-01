@@ -12,10 +12,8 @@ namespace CarpetsApp.helpers
 {
     public class PrintHelper
     {
-        public static void printExcelDoc()
+        public static void printExcelDoc(Workbook workbook)
         {
-            Workbook workbook = new Workbook();
-            workbook.LoadFromFile(ApplicationA.FILE_NAME_BILL);
             PrintDialog dialog = new PrintDialog();
             dialog.AllowPrintToFile = true;
             dialog.AllowCurrentPage = true;
@@ -30,7 +28,6 @@ namespace CarpetsApp.helpers
             workbook.PrintDialog = dialog;
             PrintDocument pd = workbook.PrintDocument;
             pd.Print();
-
         }
     }
 }

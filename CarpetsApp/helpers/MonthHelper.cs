@@ -54,5 +54,52 @@ namespace CarpetsApp.helpers
 
             return month;
         }
+
+        public static int getIntFromMonth(String month)
+        {
+            int monthInt = 0;
+
+            switch (month)
+            {
+                case "Januar":
+                    monthInt = 1;
+                    break;
+                case "Februar":
+                    monthInt = 2;
+                    break;
+                case "Mart":
+                    monthInt = 3;
+                    break;
+                case "April":
+                    monthInt = 4;
+                    break;
+                case "Maj":
+                    monthInt = 5;
+                    break;
+                case "Jun":
+                    monthInt = 6;
+                    break;
+                case "Jul":
+                    monthInt = 7;
+                    break;
+                case "Avgust":
+                    monthInt = 8;
+                    break;
+                case "Septembar":
+                    monthInt = 9;
+                    break;
+                case "Oktobar":
+                    monthInt = 10;
+                    break;
+                case "Novembar":
+                    monthInt = 11;
+                    break;
+                case "Decembar":
+                    monthInt = 12;
+                    break;
+            }
+
+            return monthInt;
+        }
     }
 }
