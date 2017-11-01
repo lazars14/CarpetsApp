@@ -12,7 +12,7 @@ namespace CarpetsApp.helpers
     {
         public void fillCompanyBills()
         {
-            foreach(Company c in ApplicationA.Instance.Companies)
+            foreach (Company c in ApplicationA.Instance.Companies)
             {
                 c.Bill = findMaxBillForCompany(c.Id);
             }
@@ -22,15 +22,44 @@ namespace CarpetsApp.helpers
         {
             int maxId = 0;
 
-            for(int i = 0; i < ApplicationA.Instance.Bills.Count; i++)
+            for (int i = 0; i < ApplicationA.Instance.Bills.Count; i++)
             {
-                if(ApplicationA.Instance.Bills[i].Company.Id == id)
+                if (ApplicationA.Instance.Bills[i].Company.Id == id)
                 {
                     maxId = i;
                 }
             }
 
             return ApplicationA.Instance.Bills[maxId];
+        }
+
+        public static int findMaxBillNumForYear(int year)
+        {
+            int maxBillNum = 0;
+
+            foreach (Bill bill in ApplicationA.Instance.Bills)
+            {
+                if (bill.TrafficYear == year && bill.BillNumForYear > maxBillNum)
+                {
+                    maxBillNum = bill.BillNumForYear;
+                }
+            }
+
+            return maxBillNum;
+        }
+
+        public static int findMaxBillItemId(Bill b)
+        {
+            int maxId = 0;
+            foreach(Billitem item in b.Items)
+            {
+                if(item.Id > maxId)
+                {
+                    maxId = item.Id;
+                }
+            }
+
+            return maxId;
         }
     }
 }

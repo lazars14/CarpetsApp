@@ -68,5 +68,52 @@ namespace CarpetsApp.dao
                 return items;
             }
         }
+
+        public static bool Add(Billitem item, Bill bill)
+        {
+            using (SqlConnection connection = new SqlConnection(ApplicationA.CONNECTION_STRING))
+            {
+                bool valid = false;
+
+                connection.Open();
+
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = @"Insert Into bill_item Values(@Carpet,@Price,@Bill);";
+
+                try
+                {
+                    command.Parameters.Add(new SqlParameter("@Carpet", item.Carpet.Id));
+                    command.Parameters.Add(new SqlParameter("@Price", item.Price));
+                    command.Parameters.Add(new SqlParameter("@Bill", bill.Id));
+                    
+                    command.ExecuteNonQuery();
+
+                    valid = true;
+                }
+                catch (SqlException e)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(e.StackTrace);
+                }
+                catch (InvalidOperationException a)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(a.StackTrace);
+                }
+                catch (ArgumentException g)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(g.StackTrace);
+                }
+                catch (NullReferenceException n)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(n.StackTrace);
+                }
+
+                return valid;
+            }
+        }
+
     }
 }

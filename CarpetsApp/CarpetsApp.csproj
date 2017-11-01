@@ -74,6 +74,7 @@
     <Compile Include="helpers\CarpetHelper.cs" />
     <Compile Include="helpers\CompaniesGridHelper.cs" />
     <Compile Include="helpers\ExcelFileEditHelper.cs" />
+    <Compile Include="helpers\MonthHelper.cs" />
     <Compile Include="helpers\PrintHelper.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

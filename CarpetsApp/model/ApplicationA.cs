@@ -65,14 +65,14 @@ namespace CarpetsApp.model
             }
         }
 
-        public static void WriteToLogActions(string stackTrace)
+        public static void WriteToLogActions(int id, string entity)
         {
             using (FileStream fs = new FileStream(FILE_NAME_TWO, FileMode.Append))
             using (StreamWriter sw = new StreamWriter(fs))
             {
                 string delimiter = "|";
                 string nextLine = "\n";
-                sw.Write(DateTime.Now + delimiter + nextLine + stackTrace + nextLine);
+                sw.Write(DateTime.Now + delimiter + "Dodata/o je " + entity + " sa id-em " + id + nextLine);
             }
         }
     }

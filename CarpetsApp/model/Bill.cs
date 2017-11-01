@@ -105,6 +105,7 @@ namespace CarpetsApp.model
             billCopy.TrafficMonth = TrafficMonth;
             billCopy.TrafficYear = TrafficYear;
             billCopy.BillDate = BillDate;
+            billCopy.Items = Items;
 
             return billCopy;
         }

@@ -1,4 +1,5 @@
-﻿using CarpetsApp.model;
+﻿using CarpetsApp.helpers;
+using CarpetsApp.model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -124,5 +125,56 @@ namespace CarpetsApp.dao
                 return bills;
             }
         }
+
+        public static bool Add(Bill bill)
+        {
+            using (SqlConnection connection = new SqlConnection(ApplicationA.CONNECTION_STRING))
+            {
+                bool valid = false;
+
+                connection.Open();
+
+                SqlCommand command = connection.CreateCommand();
+                command.CommandText = @"Insert Into bill Values(@Dispathcer,@Carpet,@BillNumNext,@TrafficMonth,@TrafficYear,@BillDate);";
+
+                try
+                {
+                    command.Parameters.Add(new SqlParameter("@Dispathcer", bill.Dispatcher));
+                    command.Parameters.Add(new SqlParameter("@Carpet", bill.Company.Id));
+                    command.Parameters.Add(new SqlParameter("@BillNumNext", bill.BillNumForYear));
+                    command.Parameters.Add(new SqlParameter("@TrafficMonth", bill.TrafficMonth));
+                    command.Parameters.Add(new SqlParameter("@TrafficYear", bill.TrafficYear));
+                    command.Parameters.Add(new SqlParameter("@BillDate", bill.BillDate));
+
+                    command.ExecuteNonQuery();
+
+                    valid = true;
+                }
+                catch (SqlException e)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(e.StackTrace);
+                }
+                catch (InvalidOperationException a)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(a.StackTrace);
+                }
+                catch (ArgumentException g)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(g.StackTrace);
+                }
+                catch (NullReferenceException n)
+                {
+                    MessageBox.Show(ApplicationA.DATABASE_ERROR_MESSAGE);
+                    ApplicationA.WriteToLog(n.StackTrace);
+                }
+
+                return valid;
+            }
+        }
+
+
     }
 }
