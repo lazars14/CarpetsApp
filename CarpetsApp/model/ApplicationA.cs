@@ -19,6 +19,7 @@ namespace CarpetsApp.model
 
         public const string FILE_NAME = @"..\..\Log.txt";
         public const string FILE_NAME_TWO = "C:\\Carpets\\Log.txt";
+        public const string FILE_NAME_BILL = @"..\\..\\excelTemplates\\faktura.xlsx";
 
         public const string FILL_ALL_FIELDS_WARNING = "Morate da popunite sva polja!";
 

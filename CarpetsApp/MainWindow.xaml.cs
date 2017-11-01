@@ -107,7 +107,7 @@ namespace CarpetsApp
 
         private void booking_btn_Click(object sender, RoutedEventArgs e)
         {
-
+            PrintHelper.printExcelDoc();
         }
 
         private void book_and_print_btn_Click(object sender, RoutedEventArgs e)
