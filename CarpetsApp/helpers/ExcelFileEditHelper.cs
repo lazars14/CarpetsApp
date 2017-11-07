@@ -13,7 +13,7 @@ namespace CarpetsApp.helpers
     {
         public static List<string> columns = new List<string>
             {
-                "B", "C", "D", "E", "F", "G", "H", "J"
+                "B", "C", "D", "E", "F", "G", "H", "J", "K"
             };
 
         public static String ITEM_NAME = "Zamena otiraca po ugovoru";
@@ -40,6 +40,8 @@ namespace CarpetsApp.helpers
             sheet.Range["J7"].Text = company.Pib;
 
             sheet.Range["H13"].Text = b.BillNumForYear + "-" + MonthHelper.getIntFromMonth(b.TrafficMonth) + "-" + (b.TrafficYear - 2000);
+
+            sheet.Range["H16"].Text = b.TrafficMonth;
 
             if(b.Items.Count > 1)
             {

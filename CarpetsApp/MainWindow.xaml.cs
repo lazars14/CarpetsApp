@@ -93,6 +93,8 @@ namespace CarpetsApp
             }
 
             companies_dg.IsSynchronizedWithCurrentItem = true;
+
+            
         }
 
         private void mark_all_btn_Click(object sender, RoutedEventArgs e)

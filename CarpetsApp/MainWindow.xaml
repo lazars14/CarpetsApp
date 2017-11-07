@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarpetsApp"
         mc:Ignorable="d"
-        Title="Preduzeca" Height="461.111" Width="900">
+        Title="Preduzeca" Height="800" Width="1200">
     <Grid>
-        <DataGrid x:Name="companies_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="141" Margin="10,56,0,0" VerticalAlignment="Top" Width="872"/>
+        <DataGrid x:Name="companies_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="250" Margin="10,56,0,0" VerticalAlignment="Top" Width="1100"/>
         <Label x:Name="companies_lbl" Content="Preduzeca" HorizontalAlignment="Left" Height="34" Margin="399,10,0,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
         <Label x:Name="traffic_lbl" Content="Mesec i godina prometa" HorizontalAlignment="Left" Margin="28,211,0,0" VerticalAlignment="Top" Width="143"/>
         <Label x:Name="date_lbl" Content="Datum fakture" HorizontalAlignment="Left" Margin="279,211,0,0" VerticalAlignment="Top" Width="143"/>
