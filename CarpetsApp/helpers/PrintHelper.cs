@@ -24,9 +24,10 @@ namespace CarpetsApp.helpers
             dialog.PrinterSettings.FromPage = 1;
             dialog.PrinterSettings.ToPage = 1;
             dialog.PrinterSettings.PrintRange = PrintRange.SomePages;
-            //dialog.PrinterSettings.Copies = 2; posle testiranja
+            dialog.PrinterSettings.Copies = 2;
             workbook.PrintDialog = dialog;
             PrintDocument pd = workbook.PrintDocument;
+            pd.DefaultPageSettings.Landscape = true;
             pd.Print();
         }
     }
