@@ -73,7 +73,7 @@ namespace CarpetsApp.helpers
             //workbook.SaveToFile("EditSheet.xlsx", ExcelVersion.Version2010);
             //System.Diagnostics.Process.Start("EditSheet.xlsx");
 
-            PrintHelper.printExcelDoc(workbook);
+            //PrintHelper.printExcelDoc(workbook);
         }
 
         private static void fillBillItem(Billitem billitem, int start_num, Worksheet sheet)
@@ -99,8 +99,8 @@ namespace CarpetsApp.helpers
             for(int i = 0; i < number_of_rows; i++)
             {
                 row = row_number + i;
-                sheet.Range["A" + row + ":J" + row].BorderAround();
-                sheet.Range["A" + row + ":J" + row].BorderInside();
+                sheet.Range["A" + row + ":K" + row].BorderAround();
+                sheet.Range["A" + row + ":K" + row].BorderInside();
             }
         }
     }

@@ -114,6 +114,7 @@
     <Compile Include="dao\CarpetDao.cs" />
     <Compile Include="dao\CompanyDao.cs" />
     <Compile Include="helpers\BillMaxHelper.cs" />
+    <Compile Include="helpers\BusinessLogicHelper.cs" />
     <Compile Include="helpers\CarpetHelper.cs" />
     <Compile Include="helpers\CompaniesGridHelper.cs" />
     <Compile Include="helpers\ExcelFileEditHelper.cs" />
