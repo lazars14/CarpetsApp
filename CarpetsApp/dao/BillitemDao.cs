@@ -37,9 +37,10 @@ namespace CarpetsApp.dao
                     {
                         int id = (int)row["id"];
                         int carpetId = (int)row["carpet_id"];
+                        int quantity = (int)row["quantity"];
                         double price = (double)row["price"];
 
-                        Billitem item = new Billitem(id, carpetId, price);
+                        Billitem item = new Billitem(id, carpetId, price, quantity);
 
                         items.Add(item);
                     }

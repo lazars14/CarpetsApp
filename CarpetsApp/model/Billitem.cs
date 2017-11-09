@@ -31,17 +31,25 @@ namespace CarpetsApp.model
             set { price = value; OnPropertyChanged("Price"); }
         }
 
+        private int quantity;
+        public int Quantity
+        {
+            get { return quantity; }
+            set { quantity = value; OnPropertyChanged("Quantity"); }
+        }
+
         public int CarpetId { get; set; }
 
         public Billitem() { }
         
         public Billitem(int id) { Id = id; }
 
-        public Billitem(int id, int carpetId, double price)
+        public Billitem(int id, int carpetId, double price, int quantity)
         {
             Id = id;
             Carpet = null;
             Price = price;
+            Quantity = quantity;
             CarpetId = carpetId;
         }
 
@@ -68,6 +76,7 @@ namespace CarpetsApp.model
             itemCopy.Id = Id;
             itemCopy.Carpet = Carpet;
             itemCopy.Price = Price;
+            itemCopy.Quantity = Quantity;
 
             return itemCopy;
         }
