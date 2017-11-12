@@ -22,9 +22,10 @@
         <ComboBox x:Name="year_cb" HorizontalAlignment="Left" Height="28" Margin="69,385,0,0" VerticalAlignment="Top" Width="105"/>
         <Label Content="Otpremnica: " HorizontalAlignment="Left" Height="26" Margin="10,442,0,0" VerticalAlignment="Top" Width="80"/>
         <CheckBox x:Name="dispatcher_chkb"  Content="" HorizontalAlignment="Left" Height="38" Margin="95,448,0,0" VerticalAlignment="Top" Width="126"/>
-        <Label x:Name="bills_lbl" Content="Racuni" Height="34" Margin="649,516,670,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
-        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="10,558,0,0" VerticalAlignment="Top" Width="1412"/>
-        <Button x:Name="print_bills_btn" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="629,724,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
+        <Label x:Name="bills_lbl" Content="Racuni" Height="34" Margin="267,519,1052,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
+        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="10,558,0,0" VerticalAlignment="Top" Width="596"/>
+        <Button x:Name="print_bills_btn" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="61,728,0,0" VerticalAlignment="Top" Width="112" Click="print_bills_btn_Click"/>
+        <Button x:Name="view_bill_btn" Content="Pregled racuna" HorizontalAlignment="Left" Height="31" Margin="443,728,0,0" VerticalAlignment="Top" Width="112" Click="view_bill_btn_Click"/>
 
     </Grid>
 </Window>

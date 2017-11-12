@@ -47,5 +47,18 @@ namespace CarpetsApp.helpers
 
             return valid;
         }
+
+        public double calculateBillAmount(Bill b)
+        {
+            double amount = 0;
+
+            foreach(Billitem item in b.Items)
+            {
+                amount += item.Price * item.Carpet.Width * item.Carpet.Length * item.Quantity;
+            }
+
+            return amount;
+        }
+
     }
 }

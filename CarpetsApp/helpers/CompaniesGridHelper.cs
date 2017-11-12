@@ -13,11 +13,17 @@ namespace CarpetsApp.helpers
     {
         public List<String> headers = new List<string> {"Id", "Zona", "Naziv", "PIB", "Adresa", "Grad", "Kontakt osoba",
                 "Kontakt telefon", "Datum potpisivanja", "Nesigurno", "Kompenzacija", "Broj zamena", "Broj tepiha",
-                "Broj lokacija", "Poslednji racun"
+                "Broj lokacija", "Poslednji racun", "Vrednost racuna"
             };
         public List<String> bindings = new List<string> {"Id", "Zone", "Name", "Pib", "Address", "City", "ContactPerson",
-            "PhoneNumber", "SigningDate", "Insecure", "Compensation", "NumReplacements", "NumCarpets", "NumLocations",
-            "Bill.BillNum"
+                "PhoneNumber", "SigningDate", "Insecure", "Compensation", "NumReplacements", "NumCarpets", "NumLocations",
+                "Bill.BillNum", "Bill.Amount"
+            };
+
+        public List<String> billsHeaders = new List<string> {"Firma", "Otpremnica",  "Broj racuna", "Datum", "Iznos"
+            };
+
+        public List<String> billsBindings = new List<string> {"Company.Name", "Dispatcher", "BillNum", "BillDate", "Amount"
             };
 
         public void setupTable(DataGrid dg)
@@ -33,6 +39,26 @@ namespace CarpetsApp.helpers
             }
 
             foreach (object c in ApplicationA.Instance.Companies)
+            {
+                dg.Items.Add(c);
+            }
+
+            dg.IsSynchronizedWithCurrentItem = true;
+        }
+
+        public void setupTableBills(DataGrid dg)
+        {
+            DataGridTextColumn column = new DataGridTextColumn();
+
+            for (int i = 0; i < billsHeaders.Count; i++)
+            {
+                column = new DataGridTextColumn();
+                column.Header = billsHeaders[i];
+                column.Binding = new Binding(billsBindings[i]);
+                dg.Columns.Add(column);
+            }
+
+            foreach (object c in ApplicationA.Instance.Bills)
             {
                 dg.Items.Add(c);
             }

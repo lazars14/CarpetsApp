@@ -36,11 +36,13 @@ namespace CarpetsApp
             setupBillsAndCarpets();
             cgHelper.setupTable(companies_dg);
             setupComboBoxes();
+            cgHelper.setupTableBills(bills_dg);
         }
 
         private void setupBillsAndCarpets()
         {
             billMaxHelper.fillCompanyBills();
+            billMaxHelper.fillBillCompany();
             carpetHelper.setCarpetsForItems();
         }
 
@@ -100,6 +102,33 @@ namespace CarpetsApp
                 bool good = businessLogic.createBills(companies_dg, bill_date, traffic_month_and_year, print);
 
                 // to do
+            }
+        }
+
+        private void print_bills_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (bills_dg.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Morate da oznacite neki racun!");
+            }
+            else
+            {
+                foreach(Bill b in bills_dg.SelectedItems)
+                {
+                    //ExcelFileEditHelper.editExcelFile(b.Company, true);
+                }
+            }
+        }
+
+        private void view_bill_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if (bills_dg.SelectedItems.Count != 1)
+            {
+                MessageBox.Show("Morate da oznacite jedan racun!");
+            }
+            else
+            {
+
             }
         }
     }

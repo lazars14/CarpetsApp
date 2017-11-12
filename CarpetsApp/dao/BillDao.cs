@@ -40,8 +40,9 @@ namespace CarpetsApp.dao
                         int trafficYear = (int)row["traffic_year"];
                         int billNumForYear = (int)row["bill_num_for_year"];
                         DateTime billDate = (DateTime)row["bill_date"];
+                        double amount = (double)row["bill_sum"];
 
-                        return new Bill(id, dispatcher, companyId, billNumForYear, trafficMonth, trafficYear, billDate);
+                        return new Bill(id, dispatcher, companyId, billNumForYear, trafficMonth, trafficYear, billDate, amount);
                     }
                 }
                 catch (SqlException e)
@@ -97,8 +98,9 @@ namespace CarpetsApp.dao
                         int billNumForYear = (int)row["bill_num_for_year"];
                         DateTime billDate = (DateTime)row["bill_date"];
                         int companyId = (int)row["company_id"];
+                        double amount = (double)row["bill_sum"];
 
-                        bills.Add(new Bill(id, dispatcher, companyId, billNumForYear, trafficMonth, trafficYear, billDate));
+                        bills.Add(new Bill(id, dispatcher, companyId, billNumForYear, trafficMonth, trafficYear, billDate, amount));
                     }
                 }
                 catch (SqlException e)
@@ -135,7 +137,7 @@ namespace CarpetsApp.dao
                 connection.Open();
 
                 SqlCommand command = connection.CreateCommand();
-                command.CommandText = @"Insert Into bill Values(@Dispathcer,@Carpet,@BillNumNext,@TrafficMonth,@TrafficYear,@BillDate);";
+                command.CommandText = @"Insert Into bill Values(@Dispathcer,@Carpet,@BillNumNext,@TrafficMonth,@TrafficYear,@BillDate,@BillAmount);";
 
                 try
                 {
@@ -145,6 +147,7 @@ namespace CarpetsApp.dao
                     command.Parameters.Add(new SqlParameter("@TrafficMonth", bill.TrafficMonth));
                     command.Parameters.Add(new SqlParameter("@TrafficYear", bill.TrafficYear));
                     command.Parameters.Add(new SqlParameter("@BillDate", bill.BillDate));
+                    command.Parameters.Add(new SqlParameter("@BillAmount", bill.Amount));
 
                     command.ExecuteNonQuery();
 

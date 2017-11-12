@@ -68,7 +68,7 @@ namespace CarpetsApp.helpers
 
                 fillBillItem(b.Items[0], 28, sheet);
                 sheet.Range["B40"].Text = b.BillDate.Day + "-" + b.BillDate.Month + "-" + b.BillDate.Year;
-                sheet.Range["K29"].Text = sum.ToString();
+                sheet.Range["K29"].Text = Math.Round(sum, 2).ToString();
             }
 
             //Save and Launch
@@ -94,11 +94,11 @@ namespace CarpetsApp.helpers
             double length = billitem.Carpet.Length;
             double width = billitem.Carpet.Width;
             double surface = length * width * billitem.Quantity;
-            double sum = surface * billitem.Price;
+            double sum = Math.Round(surface * billitem.Price, 2);
 
             List<string> items = new List<string> {
                 ITEM_NAME, length.ToString(), width.ToString(), UNIT_NAME, billitem.Quantity.ToString(),
-                billitem.Price.ToString(), surface.ToString(), sum.ToString(), sum.ToString()
+                Math.Round(billitem.Price, 2).ToString(), Math.Round(surface, 2).ToString(), sum.ToString(), sum.ToString()
             };
             
             for(int i = 0; i < items.Count; i++)

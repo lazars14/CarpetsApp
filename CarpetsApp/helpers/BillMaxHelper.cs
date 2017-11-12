@@ -73,5 +73,26 @@ namespace CarpetsApp.helpers
 
             return sum;
         }
+
+        public void fillBillCompany()
+        {
+            foreach(Bill bill in ApplicationA.Instance.Bills)
+            {
+                bill.Company.Name = findCompanyName(bill.Company.Id);
+            }
+        }
+
+        private String findCompanyName(int id)
+        {
+            foreach(Company c in ApplicationA.Instance.Companies)
+            {
+                if(c.Id == id)
+                {
+                    return c.Name;
+                }
+            }
+
+            return null;
+        }
     }
 }

@@ -22,18 +22,18 @@ namespace CarpetsApp.model
             set { id = value; OnPropertyChanged("Id"); }
         }
 
-        private String dispatcher;
-        public String Dispatcher
-        {
-            get { return dispatcher; }
-            set { dispatcher = value; OnPropertyChanged("Dispatcher"); }
-        }
-
         private Company company;
         public Company Company
         {
             get { return company; }
             set { company = value; OnPropertyChanged("Company"); }
+        }
+
+        private String dispatcher;
+        public String Dispatcher
+        {
+            get { return dispatcher; }
+            set { dispatcher = value; OnPropertyChanged("Dispatcher"); }
         }
 
         private int billNumForYear;
@@ -64,13 +64,20 @@ namespace CarpetsApp.model
             set { billDate = value; OnPropertyChanged("BillDate"); }
         }
 
+        private double amount;
+        public double Amount
+        {
+            get { return amount; }
+            set { amount = value; OnPropertyChanged("Amount"); }
+        }
+
         public ObservableCollection<Billitem> Items { get; set; }
 
         public Bill() { }
 
         public Bill(int id) { Id = id; }
 
-        public Bill(int id, string dispatcher, int companyId, int billNumForYear, string trafficMonth, int trafficYear, DateTime billDate)
+        public Bill(int id, string dispatcher, int companyId, int billNumForYear, string trafficMonth, int trafficYear, DateTime billDate, double amount)
         {
             Id = id;
             Dispatcher = dispatcher;
@@ -81,6 +88,7 @@ namespace CarpetsApp.model
             BillDate = billDate;
             Items = BillitemDao.LoadForBill(this);
             BillNum = billNumForYear + "-" + MonthHelper.getIntFromMonth(trafficMonth) + "-" + (trafficYear - 2000);
+            Amount = amount;
         }
 
         #region INotifyPropertyChanged
@@ -111,6 +119,7 @@ namespace CarpetsApp.model
             billCopy.BillDate = BillDate;
             billCopy.Items = Items;
             billCopy.BillNum = BillNum;
+            billCopy.Amount = Amount;
 
             return billCopy;
         }
