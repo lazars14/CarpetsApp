@@ -55,6 +55,12 @@ namespace CarpetsApp.helpers
                 column = new DataGridTextColumn();
                 column.Header = billsHeaders[i];
                 column.Binding = new Binding(billsBindings[i]);
+
+                if(billsHeaders[i] == "Datum")
+                {
+                    column.Binding.StringFormat = "d";
+                }
+
                 dg.Columns.Add(column);
             }
 
