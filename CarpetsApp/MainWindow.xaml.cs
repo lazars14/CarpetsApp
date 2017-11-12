@@ -70,11 +70,6 @@ namespace CarpetsApp
             companies_dg.UnselectAll();
         }
 
-        private void booking_btn_Click(object sender, RoutedEventArgs e)
-        {
-            ExcelFileEditHelper.editExcelFile(ApplicationA.Instance.Companies[0]);
-        }
-
         private void book_and_print_btn_Click(object sender, RoutedEventArgs e)
         {
             if(companies_dg.SelectedItems.Count == 0)
@@ -92,7 +87,19 @@ namespace CarpetsApp
 
                 DateTime bill_date = date_cal.SelectedDate.Value;
 
-                bool good = businessLogic.createBills(companies_dg, bill_date, traffic_month_and_year);
+                bool print = false;
+
+                Button btn = (Button)sender;
+                string btn_name = btn.Name;
+
+                if (btn_name == "book_and_print_btn")
+                {
+                    print = true;
+                }
+
+                bool good = businessLogic.createBills(companies_dg, bill_date, traffic_month_and_year, print);
+
+                // to do
             }
         }
     }

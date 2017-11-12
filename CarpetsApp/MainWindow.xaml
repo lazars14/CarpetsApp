@@ -5,21 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarpetsApp"
         mc:Ignorable="d"
-        Title="Preduzeca" Height="800" Width="1200">
+        Title="Preduzeca" Height="800" Width="1440">
     <Grid>
-        <DataGrid x:Name="companies_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="250" Margin="10,56,0,0" VerticalAlignment="Top" Width="1100"/>
-        <Label x:Name="companies_lbl" Content="Preduzeca" HorizontalAlignment="Left" Height="34" Margin="399,10,0,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
-        <Label x:Name="traffic_lbl" Content="Mesec i godina prometa" HorizontalAlignment="Left" Margin="28,211,0,0" VerticalAlignment="Top" Width="143"/>
-        <Label x:Name="date_lbl" Content="Datum fakture" HorizontalAlignment="Left" Margin="279,211,0,0" VerticalAlignment="Top" Width="143"/>
-        <Calendar x:Name="date_cal" HorizontalAlignment="Left" Margin="234,242,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="mark_all_btn" Content="Obelezi sve" HorizontalAlignment="Left" Height="31" Margin="454,246,0,0" VerticalAlignment="Top" Width="112" Click="mark_all_btn_Click"/>
-        <Button x:Name="mark_none_btn" Content="Obelezi nista" HorizontalAlignment="Left" Height="31" Margin="454,294,0,0" VerticalAlignment="Top" Width="112" Click="mark_none_btn_Click"/>
-        <Button x:Name="booking_btn" Content="Proknjizi" HorizontalAlignment="Left" Height="31" Margin="770,246,0,0" VerticalAlignment="Top" Width="112" Click="booking_btn_Click"/>
-        <Button x:Name="book_and_print_btn" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="770,294,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
-        <Label x:Name="month_lbl" Content="Mesec" HorizontalAlignment="Left" Height="28" Margin="10,249,0,0" VerticalAlignment="Top" Width="51"/>
-        <Label x:Name="year_lbl" Content="Godina" HorizontalAlignment="Left" Height="28" Margin="10,294,0,0" VerticalAlignment="Top" Width="51"/>
-        <ComboBox x:Name="month_cb" HorizontalAlignment="Left" Height="28" Margin="66,249,0,0" VerticalAlignment="Top" Width="105"/>
-        <ComboBox x:Name="year_cb" HorizontalAlignment="Left" Height="28" Margin="66,294,0,0" VerticalAlignment="Top" Width="105"/>
+        <DataGrid x:Name="companies_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="226" Margin="10,56,0,0" VerticalAlignment="Top" Width="1412"/>
+        <Label x:Name="companies_lbl" Content="Preduzeca" Height="34" Margin="649,10,670,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
+        <Label x:Name="traffic_lbl" Content="Mesec i godina prometa" HorizontalAlignment="Left" Margin="31,302,0,0" VerticalAlignment="Top" Width="143"/>
+        <Label x:Name="date_lbl" Content="Datum fakture" HorizontalAlignment="Left" Margin="282,302,0,0" VerticalAlignment="Top" Width="143"/>
+        <Calendar x:Name="date_cal" HorizontalAlignment="Left" Margin="237,333,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="mark_all_btn" Content="Obelezi sve" HorizontalAlignment="Left" Height="31" Margin="469,334,0,0" VerticalAlignment="Top" Width="112" Click="mark_all_btn_Click"/>
+        <Button x:Name="mark_none_btn" Content="Obelezi nista" HorizontalAlignment="Left" Height="31" Margin="469,382,0,0" VerticalAlignment="Top" Width="112" Click="mark_none_btn_Click"/>
+        <Button x:Name="booking_btn" Content="Proknjizi" HorizontalAlignment="Left" Height="31" Margin="603,334,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
+        <Button x:Name="book_and_print_btn" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="603,382,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
+        <Label x:Name="month_lbl" Content="Mesec" HorizontalAlignment="Left" Height="28" Margin="13,340,0,0" VerticalAlignment="Top" Width="51"/>
+        <Label x:Name="year_lbl" Content="Godina" HorizontalAlignment="Left" Height="28" Margin="13,385,0,0" VerticalAlignment="Top" Width="51"/>
+        <ComboBox x:Name="month_cb" HorizontalAlignment="Left" Height="28" Margin="69,340,0,0" VerticalAlignment="Top" Width="105"/>
+        <ComboBox x:Name="year_cb" HorizontalAlignment="Left" Height="28" Margin="69,385,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Otpremnica: " HorizontalAlignment="Left" Height="26" Margin="10,442,0,0" VerticalAlignment="Top" Width="80"/>
+        <CheckBox x:Name="dispatcher_chkb"  Content="" HorizontalAlignment="Left" Height="38" Margin="95,448,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label x:Name="bills_lbl" Content="Racuni" Height="34" Margin="649,516,670,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
+        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="10,558,0,0" VerticalAlignment="Top" Width="1412"/>
+        <Button x:Name="print_bills_btn" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="629,724,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
 
     </Grid>
 </Window>

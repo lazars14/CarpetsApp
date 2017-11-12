@@ -1,4 +1,5 @@
 ﻿using CarpetsApp.dao;
+using CarpetsApp.helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,6 +13,8 @@ namespace CarpetsApp.model
 {
     public class Bill : INotifyPropertyChanged, ICloneable
     {
+        public String BillNum { get; set; }
+
         private int id;
         public int Id
         {
@@ -77,6 +80,7 @@ namespace CarpetsApp.model
             TrafficYear = trafficYear;
             BillDate = billDate;
             Items = BillitemDao.LoadForBill(this);
+            BillNum = billNumForYear + "-" + MonthHelper.getIntFromMonth(trafficMonth) + "-" + (trafficYear - 2000);
         }
 
         #region INotifyPropertyChanged
@@ -106,6 +110,7 @@ namespace CarpetsApp.model
             billCopy.TrafficYear = TrafficYear;
             billCopy.BillDate = BillDate;
             billCopy.Items = Items;
+            billCopy.BillNum = BillNum;
 
             return billCopy;
         }

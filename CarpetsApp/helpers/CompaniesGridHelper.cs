@@ -17,7 +17,8 @@ namespace CarpetsApp.helpers
             };
         public List<String> bindings = new List<string> {"Id", "Zone", "Name", "Pib", "Address", "City", "ContactPerson",
             "PhoneNumber", "SigningDate", "Insecure", "Compensation", "NumReplacements", "NumCarpets", "NumLocations",
-            "Bill.BillNumForYear"};
+            "Bill.BillNum"
+            };
 
         public void setupTable(DataGrid dg)
         {
@@ -38,6 +39,5 @@ namespace CarpetsApp.helpers
 
             dg.IsSynchronizedWithCurrentItem = true;
         }
-
     }
 }

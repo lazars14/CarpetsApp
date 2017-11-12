@@ -12,14 +12,16 @@ namespace CarpetsApp.helpers
     public class ExcelFileEditHelper
     {
         public static List<string> columns = new List<string>
-            {
+        {
                 "B", "C", "D", "E", "F", "G", "H", "J", "K"
-            };
+        };
 
         public static String ITEM_NAME = "Zamena otiraca po ugovoru";
         public static String UNIT_NAME = "m" + "\xB2";
+        public static String DISPATCHER = "OTPREMNICA";
 
-        public static void editExcelFile(Company company)
+
+        public static void editExcelFile(Company company, bool print)
         {
             Bill b = company.Bill;
             int dateYvalue = 40 + b.Items.Count - 1;
@@ -56,7 +58,7 @@ namespace CarpetsApp.helpers
                     fillBillItem(b.Items[i], 28 + i, sheet);
                 }
 
-                sheet.Range["J" + (29 + b.Items.Count - 1)].Text = BillMaxHelper.getBillValue(b).ToString();
+                sheet.Range["K" + (29 + b.Items.Count - 1)].Text = BillMaxHelper.getBillValue(b).ToString();
                 sheet.Range["B" + dateYvalue].Text = b.BillDate.Day + "-" + b.BillDate.Month + "-" + b.BillDate.Year;
             }
             else
@@ -66,23 +68,37 @@ namespace CarpetsApp.helpers
 
                 fillBillItem(b.Items[0], 28, sheet);
                 sheet.Range["B40"].Text = b.BillDate.Day + "-" + b.BillDate.Month + "-" + b.BillDate.Year;
-                sheet.Range["J29"].Text = sum.ToString();
+                sheet.Range["K29"].Text = sum.ToString();
             }
 
             //Save and Launch
             //workbook.SaveToFile("EditSheet.xlsx", ExcelVersion.Version2010);
             //System.Diagnostics.Process.Start("EditSheet.xlsx");
 
-            //PrintHelper.printExcelDoc(workbook);
+            if (print)
+            {
+                //PrintHelper.printExcelDoc(workbook);
+                if(b.Dispatcher != "")
+                {
+                    sheet.Range["F12"].Text = "";
+                    sheet.Range["F13"].Text = DISPATCHER;
+
+                    //PrintHelper.printExcelDoc(workbook);
+                }
+            }
+
         }
 
         private static void fillBillItem(Billitem billitem, int start_num, Worksheet sheet)
         {
+            double length = billitem.Carpet.Length;
+            double width = billitem.Carpet.Width;
+            double surface = length * width * billitem.Quantity;
+            double sum = surface * billitem.Price;
+
             List<string> items = new List<string> {
-                ITEM_NAME, billitem.Carpet.Length.ToString(), billitem.Carpet.Width.ToString(), UNIT_NAME,
-                (billitem.Carpet.Length * billitem.Carpet.Width).ToString(), billitem.Price.ToString(),
-                (billitem.Carpet.Length * billitem.Carpet.Width * billitem.Price).ToString(),
-                (billitem.Carpet.Length * billitem.Carpet.Width * billitem.Price).ToString()
+                ITEM_NAME, length.ToString(), width.ToString(), UNIT_NAME, billitem.Quantity.ToString(),
+                billitem.Price.ToString(), surface.ToString(), sum.ToString(), sum.ToString()
             };
             
             for(int i = 0; i < items.Count; i++)

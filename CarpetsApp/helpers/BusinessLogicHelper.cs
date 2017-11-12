@@ -11,7 +11,7 @@ namespace CarpetsApp.helpers
 {
     public class BusinessLogicHelper
     {
-        public bool createBills(DataGrid dg, DateTime bill_date, DateTime traffic_month_and_year)
+        public bool createBills(DataGrid dg, DateTime bill_date, DateTime traffic_month_and_year, bool print)
         {
             bool valid = false;
 
@@ -42,7 +42,7 @@ namespace CarpetsApp.helpers
                     }
                 }
 
-                ExcelFileEditHelper.editExcelFile(c);
+                ExcelFileEditHelper.editExcelFile(c, print);
             }
 
             return valid;
