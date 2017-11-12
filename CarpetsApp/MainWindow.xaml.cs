@@ -128,8 +128,34 @@ namespace CarpetsApp
             }
             else
             {
-                
+                // prikaz racuna
+                // mogucnost izmene
+
+                // kod kreiranja novog racuna omoguciti chkbox otpremnica
             }
+        }
+
+        private void book_existing_bill_Click(object sender, RoutedEventArgs e)
+        {
+            if (bills_dg.SelectedItems.Count != 1)
+            {
+                MessageBox.Show("Morate da oznacite jedan racun!");
+            }
+            else
+            {
+                // knjizenje tog racuna za tu kompaniju, u slucaju da je atipicna f-ra poslednja
+                // i onda postavljam taj racun za kompaniju u tabeli za kompanije
+            }
+        }
+
+        private void search_btn_Click(object sender, RoutedEventArgs e)
+        {
+            // postavljanje filtera - imam u kodu kod pop-a
+        }
+
+        private void cancel_search_btn_Click(object sender, RoutedEventArgs e)
+        {
+            // skidanje filter-a - imam u kodu kod pop-a
         }
     }
 }

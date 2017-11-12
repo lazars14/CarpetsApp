@@ -5,27 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CarpetsApp"
         mc:Ignorable="d"
-        Title="Preduzeca" Height="800" Width="1440">
-    <Grid>
+        Title="Preduzeca" Height="800" Width="1440" WindowStartupLocation="CenterScreen">
+    <Grid Margin="4,0,-4,0">
         <DataGrid x:Name="companies_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="226" Margin="10,56,0,0" VerticalAlignment="Top" Width="1412"/>
         <Label x:Name="companies_lbl" Content="Preduzeca" Height="34" Margin="649,10,670,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
         <Label x:Name="traffic_lbl" Content="Mesec i godina prometa" HorizontalAlignment="Left" Margin="31,302,0,0" VerticalAlignment="Top" Width="143"/>
         <Label x:Name="date_lbl" Content="Datum fakture" HorizontalAlignment="Left" Margin="282,302,0,0" VerticalAlignment="Top" Width="143"/>
         <Calendar x:Name="date_cal" HorizontalAlignment="Left" Margin="237,333,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="mark_all_btn" Content="Obelezi sve" HorizontalAlignment="Left" Height="31" Margin="469,334,0,0" VerticalAlignment="Top" Width="112" Click="mark_all_btn_Click"/>
-        <Button x:Name="mark_none_btn" Content="Obelezi nista" HorizontalAlignment="Left" Height="31" Margin="469,382,0,0" VerticalAlignment="Top" Width="112" Click="mark_none_btn_Click"/>
-        <Button x:Name="booking_btn" Content="Proknjizi" HorizontalAlignment="Left" Height="31" Margin="603,334,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
-        <Button x:Name="book_and_print_btn" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="603,382,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
+        <Button x:Name="mark_all_btn" Content="Obelezi sve" HorizontalAlignment="Left" Height="31" Margin="113,544,0,0" VerticalAlignment="Top" Width="112" Click="mark_all_btn_Click"/>
+        <Button x:Name="mark_none_btn" Content="Obelezi nista" HorizontalAlignment="Left" Height="31" Margin="113,592,0,0" VerticalAlignment="Top" Width="112" Click="mark_none_btn_Click"/>
+        <Button x:Name="booking_btn" Content="Proknjizi" HorizontalAlignment="Left" Height="31" Margin="247,544,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
+        <Button x:Name="book_and_print_btn" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="247,592,0,0" VerticalAlignment="Top" Width="112" Click="book_and_print_btn_Click"/>
         <Label x:Name="month_lbl" Content="Mesec" HorizontalAlignment="Left" Height="28" Margin="13,340,0,0" VerticalAlignment="Top" Width="51"/>
         <Label x:Name="year_lbl" Content="Godina" HorizontalAlignment="Left" Height="28" Margin="13,385,0,0" VerticalAlignment="Top" Width="51"/>
         <ComboBox x:Name="month_cb" HorizontalAlignment="Left" Height="28" Margin="69,340,0,0" VerticalAlignment="Top" Width="105"/>
         <ComboBox x:Name="year_cb" HorizontalAlignment="Left" Height="28" Margin="69,385,0,0" VerticalAlignment="Top" Width="105"/>
-        <Label Content="Otpremnica: " HorizontalAlignment="Left" Height="26" Margin="10,442,0,0" VerticalAlignment="Top" Width="80"/>
-        <CheckBox x:Name="dispatcher_chkb"  Content="" HorizontalAlignment="Left" Height="38" Margin="95,448,0,0" VerticalAlignment="Top" Width="126"/>
-        <Label x:Name="bills_lbl" Content="Racuni" Height="34" Margin="267,519,1052,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
-        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="10,558,0,0" VerticalAlignment="Top" Width="596"/>
-        <Button x:Name="print_bills_btn" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="61,728,0,0" VerticalAlignment="Top" Width="112" Click="print_bills_btn_Click"/>
-        <Button x:Name="view_bill_btn" Content="Pregled racuna" HorizontalAlignment="Left" Height="31" Margin="443,728,0,0" VerticalAlignment="Top" Width="112" Click="view_bill_btn_Click"/>
+        <Label x:Name="bills_lbl" Content="Racuni" Height="34" Margin="1029,293,290,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
+        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="772,332,0,0" VerticalAlignment="Top" Width="596"/>
+        <Button x:Name="print_bills_btn" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="797,502,0,0" VerticalAlignment="Top" Width="112" Click="print_bills_btn_Click"/>
+        <Button x:Name="view_bill_btn" Content="Pregled racuna" HorizontalAlignment="Left" Height="31" Margin="929,502,0,0" VerticalAlignment="Top" Width="112" Click="view_bill_btn_Click"/>
+        <Button x:Name="book_existing_bill" Content="Proknjizi racun" HorizontalAlignment="Left" Height="31" Margin="1103,502,0,0" VerticalAlignment="Top" Width="112" Click="book_existing_bill_Click"/>
+        <Button x:Name="book_and_print_existing_bill" Content="Proknjizi i stampaj" HorizontalAlignment="Left" Height="31" Margin="1229,502,0,0" VerticalAlignment="Top" Width="112" Click="book_existing_bill_Click"/>
+        <Label x:Name="bills_search_lbl" Content="Pretraga racuna" Height="34" Margin="1003,559,284,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="search_btn" Content="Pretrazi" HorizontalAlignment="Left" Height="31" Margin="935,688,0,0" VerticalAlignment="Top" Width="112" Click="search_btn_Click"/>
+        <Button x:Name="cancel_search_btn" Content="Ponisti pretragu" HorizontalAlignment="Left" Height="31" Margin="1067,688,0,0" VerticalAlignment="Top" Width="124" Click="cancel_search_btn_Click"/>
+        <CheckBox x:Name="company_chkb" Content="Firma" HorizontalAlignment="Left" Height="28" Margin="756,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="dispatcher_chkb" Content="Otpremnica" HorizontalAlignment="Left" Height="28" Margin="886,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="bill_num_chkb" Content="Racun" HorizontalAlignment="Left" Height="28" Margin="1012,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="date_chkb" Content="Datum" HorizontalAlignment="Left" Height="28" Margin="1144,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="amount_chkb" Content="Iznos" HorizontalAlignment="Left" Height="28" Margin="1272,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <TextBox x:Name="company_txtb" HorizontalAlignment="Left" Height="22" Margin="756,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="dispatcher_txtb" HorizontalAlignment="Left" Height="22" Margin="886,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="bill_num_txtb" HorizontalAlignment="Left" Height="22" Margin="1014,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <DatePicker x:Name="bill_date_dpick" HorizontalAlignment="Left" Height="22" Margin="1144,632,0,0" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="amount_txtb" HorizontalAlignment="Left" Height="22" Margin="1272,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
 
     </Grid>
 </Window>
