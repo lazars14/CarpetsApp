@@ -13,7 +13,7 @@ namespace CarpetsApp.dao
 {
     public class BillitemDao
     {
-        public static ObservableCollection<Billitem> LoadForBill(Bill bill)
+        public static ObservableCollection<Billitem> LoadForBill(int billId)
         {
             using (SqlConnection connection = new SqlConnection(ApplicationA.CONNECTION_STRING))
             {
@@ -30,7 +30,7 @@ namespace CarpetsApp.dao
 
                 try
                 {
-                    command.Parameters.Add(new SqlParameter("@Bill_Id", bill.Id));
+                    command.Parameters.Add(new SqlParameter("@Bill_Id", billId));
                     dataAdapter.Fill(dataSet, "bill_item");
 
                     foreach (DataRow row in dataSet.Tables["bill_item"].Rows)

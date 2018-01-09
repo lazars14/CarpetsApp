@@ -1,4 +1,5 @@
-﻿using CarpetsApp.model;
+﻿using CarpetsApp.dao;
+using CarpetsApp.model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -79,6 +80,14 @@ namespace CarpetsApp.helpers
             foreach(Bill bill in ApplicationA.Instance.Bills)
             {
                 bill.Company.Name = findCompanyName(bill.Company.Id);
+            }
+        }
+
+        internal void loadBillItems()
+        {
+            foreach (Bill bill in ApplicationA.Instance.Bills)
+            {
+                bill.Items = BillitemDao.LoadForBill(bill.Id);
             }
         }
 

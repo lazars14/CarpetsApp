@@ -21,7 +21,7 @@
         <ComboBox x:Name="month_cb" HorizontalAlignment="Left" Height="28" Margin="69,340,0,0" VerticalAlignment="Top" Width="105"/>
         <ComboBox x:Name="year_cb" HorizontalAlignment="Left" Height="28" Margin="69,385,0,0" VerticalAlignment="Top" Width="105"/>
         <Label x:Name="bills_lbl" Content="Racuni" Height="34" Margin="1029,293,290,0" VerticalAlignment="Top" Width="113" FontSize="18"/>
-        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="772,332,0,0" VerticalAlignment="Top" Width="596"/>
+        <DataGrid x:Name="bills_dg" IsReadOnly="True" HorizontalAlignment="Left" Height="154" Margin="772,332,0,0" VerticalAlignment="Top" Width="596" AutoGeneratingColumn="bills_dg_AutoGeneratingColumn"/>
         <Button x:Name="print_bills_btn" Content="Stampaj" HorizontalAlignment="Left" Height="31" Margin="797,502,0,0" VerticalAlignment="Top" Width="112" Click="print_bills_btn_Click"/>
         <Button x:Name="view_bill_btn" Content="Pregled racuna" HorizontalAlignment="Left" Height="31" Margin="929,502,0,0" VerticalAlignment="Top" Width="112" Click="view_bill_btn_Click"/>
         <Button x:Name="book_existing_bill" Content="Proknjizi racun" HorizontalAlignment="Left" Height="31" Margin="1103,502,0,0" VerticalAlignment="Top" Width="112" Click="book_existing_bill_Click"/>
@@ -30,15 +30,15 @@
         <Button x:Name="search_btn" Content="Pretrazi" HorizontalAlignment="Left" Height="31" Margin="935,688,0,0" VerticalAlignment="Top" Width="112" Click="search_btn_Click"/>
         <Button x:Name="cancel_search_btn" Content="Ponisti pretragu" HorizontalAlignment="Left" Height="31" Margin="1067,688,0,0" VerticalAlignment="Top" Width="124" Click="cancel_search_btn_Click"/>
         <CheckBox x:Name="company_chkb" Content="Firma" HorizontalAlignment="Left" Height="28" Margin="756,599,0,0" VerticalAlignment="Top" Width="92"/>
-        <CheckBox x:Name="dispatcher_chkb" Content="Otpremnica" HorizontalAlignment="Left" Height="28" Margin="886,599,0,0" VerticalAlignment="Top" Width="92"/>
-        <CheckBox x:Name="bill_num_chkb" Content="Racun" HorizontalAlignment="Left" Height="28" Margin="1012,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="bill_num_chkb" Content="Racun" HorizontalAlignment="Left" Height="28" Margin="886,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="year_chkb" Content="Godina" HorizontalAlignment="Left" Height="28" Margin="1012,599,0,0" VerticalAlignment="Top" Width="92"/>
         <CheckBox x:Name="date_chkb" Content="Datum" HorizontalAlignment="Left" Height="28" Margin="1144,599,0,0" VerticalAlignment="Top" Width="92"/>
-        <CheckBox x:Name="amount_chkb" Content="Iznos" HorizontalAlignment="Left" Height="28" Margin="1272,599,0,0" VerticalAlignment="Top" Width="92"/>
+        <CheckBox x:Name="month_chkb" Content="Mesec" HorizontalAlignment="Left" Height="28" Margin="1272,599,0,0" VerticalAlignment="Top" Width="92"/>
         <TextBox x:Name="company_txtb" HorizontalAlignment="Left" Height="22" Margin="756,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
-        <TextBox x:Name="dispatcher_txtb" HorizontalAlignment="Left" Height="22" Margin="886,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
-        <TextBox x:Name="bill_num_txtb" HorizontalAlignment="Left" Height="22" Margin="1014,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="bill_num_txtb" HorizontalAlignment="Left" Height="22" Margin="886,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="year_txtb" HorizontalAlignment="Left" Height="22" Margin="1014,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
         <DatePicker x:Name="bill_date_dpick" HorizontalAlignment="Left" Height="22" Margin="1144,632,0,0" VerticalAlignment="Top" Width="106"/>
-        <TextBox x:Name="amount_txtb" HorizontalAlignment="Left" Height="22" Margin="1272,632,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <ComboBox x:Name="months_search_cb" HorizontalAlignment="Left" Height="22" Margin="1272,632,0,0" VerticalAlignment="Top" Width="118"/>
 
     </Grid>
 </Window>

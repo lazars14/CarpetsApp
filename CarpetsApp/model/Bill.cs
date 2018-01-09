@@ -15,25 +15,18 @@ namespace CarpetsApp.model
     {
         public String BillNum { get; set; }
 
-        private int id;
-        public int Id
-        {
-            get { return id; }
-            set { id = value; OnPropertyChanged("Id"); }
-        }
-
-        private Company company;
-        public Company Company
-        {
-            get { return company; }
-            set { company = value; OnPropertyChanged("Company"); }
-        }
-
         private String dispatcher;
         public String Dispatcher
         {
             get { return dispatcher; }
             set { dispatcher = value; OnPropertyChanged("Dispatcher"); }
+        }
+
+        private int id;
+        public int Id
+        {
+            get { return id; }
+            set { id = value; OnPropertyChanged("Id"); }
         }
 
         private int billNumForYear;
@@ -55,6 +48,13 @@ namespace CarpetsApp.model
         {
             get { return trafficYear; }
             set { trafficYear = value; OnPropertyChanged("TrafficYear"); }
+        }
+
+        private Company company;
+        public Company Company
+        {
+            get { return company; }
+            set { company = value; OnPropertyChanged("Company"); }
         }
 
         private DateTime billDate;
@@ -86,7 +86,6 @@ namespace CarpetsApp.model
             TrafficMonth = trafficMonth;
             TrafficYear = trafficYear;
             BillDate = billDate;
-            Items = BillitemDao.LoadForBill(this);
             BillNum = billNumForYear + "-" + MonthHelper.getIntFromMonth(trafficMonth) + "-" + (trafficYear - 2000);
             Amount = amount;
         }

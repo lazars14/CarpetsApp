@@ -77,14 +77,12 @@ namespace CarpetsApp.helpers
 
             if (print)
             {
-                //PrintHelper.printExcelDoc(workbook);
                 if(b.Dispatcher != "")
                 {
                     sheet.Range["F12"].Text = "";
                     sheet.Range["F13"].Text = DISPATCHER;
-
-                    //PrintHelper.printExcelDoc(workbook);
                 }
+                //PrintHelper.printExcelDoc(workbook);
             }
 
         }

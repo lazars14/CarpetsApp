@@ -1,9 +1,11 @@
 ﻿using CarpetsApp.model;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 
@@ -28,6 +30,9 @@ namespace CarpetsApp.helpers
 
         public void setupTable(DataGrid dg)
         {
+            /*DataGridCheckBoxColumn chkBoxCell = new DataGridCheckBoxColumn();
+            dg.Columns.Add(chkBoxCell);*/
+
             DataGridTextColumn column = new DataGridTextColumn();
 
             for (int i = 0; i < headers.Count; i++)
@@ -43,14 +48,18 @@ namespace CarpetsApp.helpers
                 dg.Items.Add(c);
             }
 
+            //dg.ItemsSource = ApplicationA.Instance.Companies;
+
+   
+
             dg.IsSynchronizedWithCurrentItem = true;
         }
 
-        public void setupTableBills(DataGrid dg)
+        public void setupTableBills(DataGrid dg, ICollectionView billsView)
         {
             DataGridTextColumn column = new DataGridTextColumn();
 
-            for (int i = 0; i < billsHeaders.Count; i++)
+            /*for (int i = 0; i < billsHeaders.Count; i++)
             {
                 column = new DataGridTextColumn();
                 column.Header = billsHeaders[i];
@@ -62,12 +71,27 @@ namespace CarpetsApp.helpers
                 }
 
                 dg.Columns.Add(column);
-            }
+            }*/
 
-            foreach (object c in ApplicationA.Instance.Bills)
+            /*foreach (object c in ApplicationA.Instance.Bills)
             {
                 dg.Items.Add(c);
-            }
+            }*/
+
+            column = new DataGridTextColumn();
+            column.Header = "Firma";
+            column.Binding = new Binding("Company.Name");
+            dg.Columns.Add(column);
+
+            column = new DataGridTextColumn();
+            column.Header = "Datum";
+            column.Binding = new Binding("BillDate");
+            column.Binding.StringFormat = "d";
+            dg.Columns.Add(column);
+
+            //dg.Columns.Add(column);
+
+            //dg.ItemsSource = billsView;
 
             dg.IsSynchronizedWithCurrentItem = true;
         }

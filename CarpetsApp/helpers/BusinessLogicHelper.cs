@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace CarpetsApp.helpers
@@ -32,6 +33,8 @@ namespace CarpetsApp.helpers
                     ApplicationA.WriteToLogActions(newBill.Id, "racun");
                 }
 
+                MessageBox.Show(newBill.Items.Count.ToString());
+
                 foreach (Billitem item in newBill.Items)
                 {
                     valid = BillitemDao.Add(item, newBill);
@@ -42,7 +45,10 @@ namespace CarpetsApp.helpers
                     }
                 }
 
-                ExcelFileEditHelper.editExcelFile(c, print);
+                if (print)
+                {
+                    ExcelFileEditHelper.editExcelFile(c, print);
+                }
             }
 
             return valid;
